@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Connexion TikTok – Planificateur</title>
+<link rel="icon" href="logo.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><img src="logo.png" alt=""><a href="./">Planificateur</a></header>
+<main>
+  <h1>Retour vers le Planificateur…</h1>
+  <p>Tu vas être redirigé vers l'outil sur ton Mac.</p>
+  <div id="secours" hidden>
+    <p>Rien ne se passe ? Vérifie que le Planificateur est lancé, puis copie l'adresse de cette page et colle-la dans l'onglet <strong>Comptes</strong>, rubrique « La page de retour ne revient pas ici ? ».</p>
+  </div>
+</main>
+<script>
+  // Page relais : TikTok exige une adresse https. On renvoie le code d'autorisation vers l'outil local.
+  if (location.search) {
+    setTimeout(function () { document.getElementById("secours").hidden = false; }, 2500);
+    location.replace("http://localhost:8765/oauth/tiktok" + location.search);
+  } else {
+    document.querySelector("h1").textContent = "Page de connexion TikTok";
+    document.querySelector("main p").textContent = "Cette page sert uniquement au retour de connexion TikTok du Planificateur.";
+  }
+</script>
+</body>
+</html>
