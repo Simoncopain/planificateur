@@ -3,20 +3,90 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Planificateur</title>
+<title>Planificateur – publier une vidéo partout, une seule fois</title>
+<meta name="description" content="Application de bureau gratuite pour créateurs : importe ta vidéo une fois et publie-la avec sa légende sur YouTube, TikTok et Instagram.">
 <link rel="icon" href="logo.png">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header><img src="logo.png" alt=""><a href="./">Planificateur</a></header>
+<header class="barre">
+  <a class="marque" href="./"><img src="logo.png" alt="">Planificateur</a>
+  <nav>
+    <a href="#fonctions">Fonctions</a>
+    <a href="#telecharger">Télécharger</a>
+    <a href="#faq">Questions</a>
+    <a href="conditions.html">Conditions d'utilisation</a>
+    <a href="confidentialite.html">Confidentialité</a>
+    <a href="#en">English</a>
+  </nav>
+</header>
+
 <main>
-  <h1>Planificateur</h1>
-  <p>Outil personnel de Zion's Auto Lab pour publier ses propres vidéos sur YouTube, Instagram et TikTok depuis son ordinateur, en une seule fois.</p>
-  <p class="en">A personal tool used by Zion's Auto Lab to publish their own videos to their own accounts. Not offered to the public.</p>
-  <ul>
-    <li><a href="conditions.html">Conditions d'utilisation</a></li>
-    <li><a href="confidentialite.html">Politique de confidentialité</a></li>
-  </ul>
+  <section class="hero">
+    <div>
+      <h1>Une vidéo, une seule fois, publiée partout.</h1>
+      <p class="accroche">Planificateur est une application de bureau gratuite pour les créateurs. Tu importes ta vidéo, tu écris ton titre, ta description et tes hashtags une seule fois, puis tu la publies sur YouTube, TikTok et Instagram depuis un seul écran.</p>
+      <div class="boutons">
+        <a class="bouton principal" href="telechargement/Planificateur.zip" download>Télécharger pour macOS</a>
+        <a class="bouton" href="#installer">Comment l'installer</a>
+      </div>
+      <p class="note-dl">Gratuit · macOS 12 ou plus récent · Aucun compte Planificateur à créer</p>
+    </div>
+    <img class="logo-grand" src="logo.png" alt="Logo de Planificateur : un calendrier avec un bouton lecture">
+  </section>
+
+  <section class="section" id="fonctions">
+    <h2>Ce que fait Planificateur</h2>
+    <p class="sous">Pensé pour les vidéastes qui publient régulièrement : moins de copier-coller, aucune vidéo à réimporter trois fois.</p>
+    <div class="cartes">
+      <article class="carte"><div class="icone">⬆</div><h3>Un seul import</h3><p>Glisse ta vidéo, choisis l'image d'aperçu directement dans la vidéo ou importe ta miniature.</p></article>
+      <article class="carte"><div class="icone">✎</div><h3>Des textes adaptés</h3><p>Titre, description et hashtags écrits une fois, puis ajustés par plateforme si tu le souhaites.</p></article>
+      <article class="carte"><div class="icone">▶</div><h3>Publication en un clic</h3><p>Envoi simultané sur YouTube, TikTok et Instagram, avec le suivi de chaque publication.</p></article>
+      <article class="carte"><div class="icone">🌐</div><h3>Traductions YouTube</h3><p>Titre et description traduits automatiquement dans les langues choisies, que tu peux relire avant l'envoi.</p></article>
+      <article class="carte"><div class="icone">🎞</div><h3>Formats pris en charge</h3><p>MP4, MOV et WEBM. Les vidéos HDR sont converties automatiquement pour TikTok.</p></article>
+      <article class="carte"><div class="icone">🔒</div><h3>Tes données restent chez toi</h3><p>Tout fonctionne sur ton ordinateur. Tes connexions et tes vidéos ne passent par aucun serveur Planificateur.</p></article>
+    </div>
+    <div class="plateformes"><span>YouTube</span><span>TikTok : publication directe ou brouillon</span><span>Instagram Reels</span></div>
+  </section>
+
+  <section class="section" id="telecharger">
+    <h2 id="installer">Télécharger et installer</h2>
+    <p class="sous">L'installation prend deux minutes. Aucun logiciel supplémentaire n'est nécessaire : Planificateur utilise le Python inclus dans macOS.</p>
+    <ol class="etapes">
+      <li><strong>Télécharge Planificateur</strong><span><a href="telechargement/Planificateur.zip" download>Planificateur.zip</a> · décompresse-le où tu veux, par exemple sur ton Bureau.</span></li>
+      <li><strong>Lance l'application</strong><span>Fais un clic droit sur <code>Lancer.command</code>, puis choisis <em>Ouvrir</em>, uniquement la première fois. La page de l'application s'ouvre dans ton navigateur.</span></li>
+      <li><strong>Connecte tes comptes</strong><span>Dans l'onglet <em>Comptes</em>, clique sur <em>Connecter TikTok</em> et autorise l'accès sur la page officielle de TikTok. YouTube et Instagram se connectent de la même façon, en suivant le guide inclus.</span></li>
+      <li><strong>Publie</strong><span>Importe une vidéo, écris tes textes, choisis les plateformes, puis clique sur <em>Publier</em>.</span></li>
+    </ol>
+  </section>
+
+  <section class="section" id="faq">
+    <h2>Questions fréquentes</h2>
+    <details class="faq"><summary>Est-ce gratuit ?</summary><p>Oui. Planificateur est gratuit et ne contient pas de publicité.</p></details>
+    <details class="faq"><summary>Que fait Planificateur avec mon compte TikTok ?</summary><p>Il affiche le nom de ton compte et publie les vidéos que tu choisis, uniquement quand tu cliques sur Publier. Avant chaque envoi, tu choisis qui peut voir la vidéo et si les commentaires, Duo et Collage sont autorisés, et tu déclares un éventuel contenu commercial.</p></details>
+    <details class="faq"><summary>Où sont stockées mes données ?</summary><p>Uniquement sur ton ordinateur, dans le dossier de l'application. Voir la <a href="confidentialite.html">politique de confidentialité</a>.</p></details>
+    <details class="faq"><summary>Comment retirer l'accès ?</summary><p>Clique sur <em>Déconnecter</em> dans l'onglet Comptes, ou retire l'accès depuis TikTok : <em>Paramètres et confidentialité → Sécurité → Apps et services</em>.</p></details>
+    <details class="faq"><summary>Une question ou un problème ?</summary><p>Écris-nous en message privé sur TikTok : <a href="https://www.tiktok.com/@zion.autolab" rel="noopener">@zion.autolab</a>.</p></details>
+  </section>
+
+  <section class="section langue-en" id="en" lang="en">
+    <h2>Planificateur in English</h2>
+    <p class="sous">Planificateur is a free desktop app for video creators. Import a video once, write its title, description and hashtags once, and publish it to your own YouTube, TikTok and Instagram accounts from a single screen.</p>
+    <ol class="etapes">
+      <li><strong>Download</strong><span><a href="telechargement/Planificateur.zip" download>Planificateur.zip</a> for macOS 12 or later. Unzip it anywhere.</span></li>
+      <li><strong>Open</strong><span>Right-click <code>Lancer.command</code> and choose <em>Open</em> (first time only). The app opens in your browser.</span></li>
+      <li><strong>Connect your accounts</strong><span>In the <em>Comptes</em> (Accounts) tab, click <em>Connect TikTok</em> and authorize the app on TikTok's official page.</span></li>
+      <li><strong>Publish</strong><span>Import a video, write your caption, choose who can view it, and click <em>Publish</em>. Your data stays on your computer.</span></li>
+    </ol>
+    <p class="note-dl"><a href="conditions.html#en">Terms of Service</a> · <a href="confidentialite.html#en">Privacy Policy</a> · Contact: <a href="https://www.tiktok.com/@zion.autolab" rel="noopener">@zion.autolab</a> on TikTok</p>
+  </section>
 </main>
+
+<footer>
+  <span>© 2026 Zion's Auto Lab</span>
+  <a href="conditions.html">Conditions d'utilisation</a>
+  <a href="confidentialite.html">Politique de confidentialité</a>
+  <a href="https://www.tiktok.com/@zion.autolab" rel="noopener">Contact</a>
+</footer>
 </body>
 </html>
